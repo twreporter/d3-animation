@@ -1,0 +1,126 @@
+#rent-house {
+    width: 100%;
+}
+
+.info-row-box {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pic {
+    /*height: 500px;*/
+    width: 100%;
+    /* border-color: #9c9c9c;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px; */
+    background-color: #e2e2e2;
+    margin-top: 20px;
+}
+
+.info-row {
+    height: 22px;
+    font-family: SourceHanSansTC;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-top: 25px;
+    text-align: left;
+    color: #9c9c9c;
+}
+
+#info-row-input {
+    width: 100%;
+    height: 40px;
+    border: solid 1px #9c9c9c;
+    margin-top: 10px;
+}
+
+.info-row-desc {
+    width: 100%;
+    height: 14px;
+    font-family: SourceHanSansTC;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #9c9c9c;
+    margin-top: 6px;
+}
+
+#button {
+    width: 100%;
+    height: 40px;
+    background-color: #e2e2e2;
+    font-family: SourceHanSansTC;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-style: none;
+    margin-top: 20px;
+}
+
+#button-content {
+    width: 100%;
+    height: 19px;
+    font-family: SourceHanSansTC;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #9c9c9c;
+}
+
+@media only screen and (min-width: 768px) {
+    #rent-house {
+        width: 100%;
+    }
+    .info-row-box {
+        width: 664px;
+    }
+    .pic {
+        width: 664px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    .info-row {
+        width: 664px;
+    }
+    .info-row-group {
+        width: 400px;
+        float: left;
+    }
+    #info-row-input {
+        width: 380px;
+        margin-top: 14px;
+    }
+    .info-row-desc {
+        width: 380px;
+        margin-top: 10px;
+    }
+    #button {
+        width: 264px;
+        height: 44px;
+        margin-top: 14px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .info-row-desc {
+        height: 14px;
+        font-family: SourceHanSansTC;
+        font-size: 12px;
+    }
+}
