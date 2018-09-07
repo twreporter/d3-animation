@@ -304,8 +304,8 @@ function animation(demo, str) {
         })
         .duration(function (d) {
             if (d[4]) return Math.floor(Math.random() * 2500)
-            else if (d[5] === 'stay-left' || d[5] === 'stay-right') return 5500
-            else return 5000
+            else if (d[5] === 'stay-left' || d[5] === 'stay-right') return 4500
+            else return 3500
         })
         .attr('cx', function (d) {
             if (d[4]) {
@@ -330,9 +330,6 @@ function animation(demo, str) {
             if (count === target) setTimeout(animation1to2(demo, str), 500);
         })
     
-    // numDataPointsLeft = numDataPointsLeft.map(item => item*10);
-    // numDataPointsRight = numDataPointsRight.map(item => item*10);
-    
     let data = [leftProbability, rightProbability, numDataPointsLeft, numDataPointsRight];
     data[2]*=10;
     data[3]*=10;
@@ -342,7 +339,7 @@ function animation(demo, str) {
         })
         .transition()
         .delay(2500)
-        .transition(800)
+        .transition(600)
         .text(function (d, i) {
             if (i <= 1) return '0.00%';
             else return '共0人';
@@ -351,22 +348,22 @@ function animation(demo, str) {
             if (i <= 1) return (data[i] * 1 / 5).toFixed(2) + '%';
             else return '共' + Math.floor((data[i] * 1 / 5)) + '人';
         })
-        .transition(800)
+        .transition(600)
         .text(function (d, i) {
             if (i <= 1) return (data[i] * 2 / 5).toFixed(2) + '%';
             else return '共' + Math.floor((data[i] * 2 / 5)) + '人';
         })
-        .transition(800)
+        .transition(600)
         .text(function (d, i) {
             if (i <= 1) return (data[i] * 3 / 5).toFixed(2) + '%';
             else return '共' + Math.floor((data[i] * 3 / 5)) + '人';
         })
-        .transition(800)
+        .transition(600)
         .text(function (d, i) {
             if (i <= 1) return (data[i] * 4 / 5).toFixed(2) + '%';
             else return '共' + Math.floor((data[i] * 4 / 5)) + '人';
         })
-        .transition(800)
+        .transition(600)
         .text(function (d, i) {
             if (i <= 1) return (data[i] * 5 / 5).toFixed(2) + '%';
             else return '共' + Math.floor((data[i] * 5 / 5)) + '人';
