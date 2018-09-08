@@ -36,8 +36,6 @@ const DATA_ANIMATION2 = [DATA_ANIMATION2_NTU, DATA_ANIMATION2_TOP5, DATA_ANIMATI
 ReactDOM.render(
   <div>
     <div id="box">
-            {/* 下面這row要刪掉 */}
-      <div className="tabletitle"><b>全台灣家戶所得前5%與後5%家庭的孩子進入不同學校的比例</b></div> 
       <button class="button ntu">
         <text class="button-text ntu-text">台大</text>
       </button>
@@ -503,7 +501,7 @@ function animation2(demo, str) {
         });
 
     svg2.append('text')
-        .text('全台灣家戶所得百分位數(%)')
+        .text('全台灣家戶所得百分位數')
         .attr('x', w2 / 2)
         .attr('y', h2 + 30)
         .attr('text-anchor', "middle")
