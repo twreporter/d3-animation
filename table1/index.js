@@ -82,6 +82,7 @@ window.addEventListener('resize', function () {
 })
 
 let isActived = false;
+if(isElementInViewport(document.getElementById('table-box'))) isActived = true;
 window.addEventListener('scroll', function () {
     // console.log(isElementInViewport(document.getElementById('table-box')))
     if(isElementInViewport(document.getElementById('table-box')) && isActived === false){
