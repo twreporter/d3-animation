@@ -20,7 +20,7 @@ console.log('release-1');
 
 
 ReactDOM.render(
-    <div id='rent-house'>
+    <div id='opportunity-calculator-infographic'>
         <div className='info-row-box'>
             {/* 下面這row要刪掉 */}
             <div className="tabletitle"><b>輸入你的家戶所得數，看看你進入台大的機率有多少？</b></div> 
@@ -48,7 +48,7 @@ window.addEventListener('resize', function () {
     t_width = (window.innerWidth || document.documentElement.clientWidth);
     if (pre_t_width!==t_width) {
         pre_t_width = t_width;
-        width =  document.getElementById("rent-house").offsetWidth;
+        width =  document.getElementById("opportunity-calculator-infographic").offsetWidth;
         cleanSVG();
         cleanInputValue();
     }
@@ -84,7 +84,7 @@ function handleChange(event) {
 function handleClick(str) {
     switch (str) {
         case 'guess':
-            width =  document.getElementById("rent-house").offsetWidth;
+            width =  document.getElementById("opportunity-calculator-infographic").offsetWidth;
             if(t_width>=768) width = 664;
             let position = calculateRankinAllPopulation(income) + 1;
             let probSet = calculatePropEnterNTU(position);

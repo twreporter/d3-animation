@@ -34,7 +34,7 @@ import {
 const DATA_ANIMATION2 = [DATA_ANIMATION2_NTU, DATA_ANIMATION2_TOP5, DATA_ANIMATION2_TOP10, DATA_ANIMATION2_TOP20];
 
 ReactDOM.render(
-  <div>
+  <div id="education-dots-plot">
     <div id="box">
       <button class="button ntu">
         <text class="button-text ntu-text">台大</text>
